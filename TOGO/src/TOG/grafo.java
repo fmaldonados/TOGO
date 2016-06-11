@@ -1,4 +1,4 @@
-package togo;
+package TOG;
 
 
 public class grafo {

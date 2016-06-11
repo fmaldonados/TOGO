@@ -1,5 +1,5 @@
 
-package togo;
+package TOG;
 
 
 public class nodo_g {
