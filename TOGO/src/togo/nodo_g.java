@@ -9,6 +9,10 @@ public class nodo_g {
     public nodo_g() {
     }
 
+    public nodo_g(Object value) {
+        this.value = value;
+    }
+    
     public Object getValue() {
         return value;
     }

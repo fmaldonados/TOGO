@@ -8,6 +8,11 @@ public class grafo {
     }
     
     public void addVertex(nodo_g a){
+        for (int i = 0; i < nodos.size(); i++) {
+            if (((nodo_g)nodos.at(i)) == a) {
+                return;
+            }
+        }
        nodos.push_back(a);
     }
     public Lista getAdjacents(nodo_g node){
