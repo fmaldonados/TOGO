@@ -9,7 +9,8 @@ public class grafo {
     
     public void addVertex(nodo_g a){
         for (int i = 0; i < nodos.size(); i++) {
-            if (((nodo_g)nodos.at(i)) == a) {
+            if (((nodo_g)nodos.at(i)).toString().equals(a.toString())) {
+                System.out.println("nodo no se inserto al grafo");
                 return;
             }
         }
