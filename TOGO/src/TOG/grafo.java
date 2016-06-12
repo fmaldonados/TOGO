@@ -6,6 +6,16 @@ public class grafo {
 
     public grafo() {
     }
+
+    public Lista getNodos() {
+        return nodos;
+    }
+
+    public void setNodos(Lista nodos) {
+        this.nodos = nodos;
+    }
+    
+    
     
     public void addVertex(nodo_g a){
         for (int i = 0; i < nodos.size(); i++) {
@@ -16,6 +26,7 @@ public class grafo {
         }
        nodos.push_back(a);
     }
+    
     public Lista getAdjacents(nodo_g node){
         Lista aristas = new Lista();
         Lista adjacents = new Lista();
