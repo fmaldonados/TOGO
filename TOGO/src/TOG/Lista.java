@@ -73,7 +73,7 @@ public class Lista {
         temp.setNext(lista.first());
     }
 
-    public Object find(Object value) {
+    public int find(Object value) {
         node temp = head;
         int cont = 0;
         boolean esta = false;

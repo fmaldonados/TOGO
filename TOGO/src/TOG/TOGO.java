@@ -7,7 +7,7 @@ public class TOGO {
     
     public static void main(String[] args) {
         //ejemplo de como funciona
-        
+        /*
         grafo G = new grafo();
         
         nodo_g vertex  =  new nodo_g("proveedor");
@@ -31,7 +31,7 @@ public class TOGO {
         }
         
         // vos proba los metodos y si miras una falla me avisas, este main solo es para pruebas si queres lo podes borrar
-        
+        */
         
     }
     

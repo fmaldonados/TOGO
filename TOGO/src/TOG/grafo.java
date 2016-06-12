@@ -65,7 +65,7 @@ public class grafo {
         }
         for (int i = 0; i < aristas.size(); i++) {
             if (((nodo_g)aristas.at(i)) == b) {
-                return ((arista)aristas.at(i)).getAncho_banda();
+                return ((arista)aristas.at(i)).getAncho_banda1();
             }
         }
         
