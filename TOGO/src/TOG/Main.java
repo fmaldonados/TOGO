@@ -86,7 +86,7 @@ public class Main extends javax.swing.JFrame {
         jl_red2.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red2.setForeground(new java.awt.Color(255, 255, 255));
         jl_red2.setText("Red2");
-        jd_Conexion.getContentPane().add(jl_red2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 260, 50));
+        jd_Conexion.getContentPane().add(jl_red2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 260, 50));
 
         cbx_nodo1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         cbx_nodo1.setForeground(new java.awt.Color(0, 51, 153));
@@ -95,7 +95,7 @@ public class Main extends javax.swing.JFrame {
                 cbx_nodo1ItemStateChanged(evt);
             }
         });
-        jd_Conexion.getContentPane().add(cbx_nodo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 260, 50));
+        jd_Conexion.getContentPane().add(cbx_nodo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 260, 50));
 
         cbx_nodo2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         cbx_nodo2.setForeground(new java.awt.Color(0, 51, 153));
@@ -104,7 +104,7 @@ public class Main extends javax.swing.JFrame {
                 cbx_nodo2ItemStateChanged(evt);
             }
         });
-        jd_Conexion.getContentPane().add(cbx_nodo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, 260, 50));
+        jd_Conexion.getContentPane().add(cbx_nodo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, 260, 50));
 
         jLabel7.setFont(new java.awt.Font("Impact", 1, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 204, 0));
@@ -115,48 +115,48 @@ public class Main extends javax.swing.JFrame {
         jl_red1.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red1.setForeground(new java.awt.Color(255, 255, 255));
         jl_red1.setText("Red1");
-        jd_Conexion.getContentPane().add(jl_red1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 270, 50));
+        jd_Conexion.getContentPane().add(jl_red1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 270, 50));
 
         jl_red11.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red11.setForeground(new java.awt.Color(255, 255, 255));
         jl_red11.setText("Red1");
-        jd_Conexion.getContentPane().add(jl_red11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 270, 50));
+        jd_Conexion.getContentPane().add(jl_red11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 270, 50));
 
         jl_red22.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red22.setForeground(new java.awt.Color(255, 255, 255));
         jl_red22.setText("Red2");
-        jd_Conexion.getContentPane().add(jl_red22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, 260, 50));
+        jd_Conexion.getContentPane().add(jl_red22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 530, 260, 50));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/arrow-up-64 - Copy.png"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, 70, 70));
+        jd_Conexion.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 70, 70));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/arrow-up-64 - Copy - Copy.png"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 550, 70, 70));
+        jd_Conexion.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 70, 70));
 
         js_longitud.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         js_longitud.setModel(new javax.swing.SpinnerNumberModel());
         js_longitud.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_longitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 660, 70, 50));
+        jd_Conexion.getContentPane().add(js_longitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 630, 70, 50));
 
         js_ancho1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         js_ancho1.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), null, Integer.valueOf(100), Integer.valueOf(1)));
         js_ancho1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_ancho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 70, 50));
+        jd_Conexion.getContentPane().add(js_ancho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 420, 70, 50));
 
         jLabel13.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Escoger las Redes:");
-        jd_Conexion.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 310, 80));
+        jd_Conexion.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 310, 80));
 
         jLabel14.setFont(new java.awt.Font("Poor Richard", 0, 36)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Ingresar el Material:");
-        jd_Conexion.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
+        jd_Conexion.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
 
         js_ancho2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         js_ancho2.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), null, Integer.valueOf(100), Integer.valueOf(1)));
         js_ancho2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_ancho2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 570, 70, 50));
+        jd_Conexion.getContentPane().add(js_ancho2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 530, 70, 50));
 
         jb_NuevaConexion.setBackground(new java.awt.Color(255, 255, 255));
         jb_NuevaConexion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/011_yes-128.png"))); // NOI18N
@@ -165,12 +165,12 @@ public class Main extends javax.swing.JFrame {
                 jb_NuevaConexionMouseClicked(evt);
             }
         });
-        jd_Conexion.getContentPane().add(jb_NuevaConexion, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 640, 150, 90));
+        jd_Conexion.getContentPane().add(jb_NuevaConexion, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 610, 150, 90));
 
         jLabel17.setFont(new java.awt.Font("Poor Richard", 0, 36)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Ingresar la Longitud:");
-        jd_Conexion.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, -1, -1));
+        jd_Conexion.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, -1, -1));
 
         cbx_material.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         cbx_material.setForeground(new java.awt.Color(0, 51, 153));
@@ -180,10 +180,10 @@ public class Main extends javax.swing.JFrame {
                 cbx_materialItemStateChanged(evt);
             }
         });
-        jd_Conexion.getContentPane().add(cbx_material, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, 280, 50));
+        jd_Conexion.getContentPane().add(cbx_material, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 280, 50));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background_spots_black_gray_65536_1920x1080.jpg"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 610));
+        jd_Conexion.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 600));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/38.jpg"))); // NOI18N
         jd_Conexion.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 170));
@@ -195,7 +195,7 @@ public class Main extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Communities__Networks-128.png"))); // NOI18N
         jLabel1.setText("   T O G O  M A P P E R");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 930, 130));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, 930, 130));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/38.jpg"))); // NOI18N
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -208,20 +208,18 @@ public class Main extends javax.swing.JFrame {
         jp_Grafo.setLayout(jp_GrafoLayout);
         jp_GrafoLayout.setHorizontalGroup(
             jp_GrafoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jp_GrafoLayout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1050, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 820, Short.MAX_VALUE)
         );
         jp_GrafoLayout.setVerticalGroup(
             jp_GrafoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 460, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jp_Grafo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 1050, 600));
+        getContentPane().add(jp_Grafo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 820, 460));
 
         jButton2.setBackground(new java.awt.Color(102, 102, 102));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/678084-folder-64.png"))); // NOI18N
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 79, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 79, -1));
 
         jButton4.setBackground(new java.awt.Color(102, 102, 102));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/678092-sign-add-64.png"))); // NOI18N
@@ -230,48 +228,53 @@ public class Main extends javax.swing.JFrame {
                 jButton4MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 79, -1));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 79, -1));
 
         jButton5.setBackground(new java.awt.Color(102, 102, 102));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/floppy-64.png"))); // NOI18N
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 79, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 79, -1));
 
         jLabel4.setFont(new java.awt.Font("Rockwell Condensed", 1, 36)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("<html>S  E  L  E  C  C  I  O  N  A  R<br>A  N  A  L  I  S  I  S</html>");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 80, 330, 100));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 90, 330, 100));
 
         jButton8.setBackground(new java.awt.Color(153, 153, 0));
         jButton8.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         jButton8.setForeground(new java.awt.Color(0, 0, 51));
         jButton8.setText("Agregar Conexion");
+        jButton8.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jButton8MouseMoved(evt);
+            }
+        });
         jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton8MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 740, 190, 60));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 600, 190, 60));
 
         jButton3.setBackground(new java.awt.Color(51, 0, 51));
         jButton3.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/08_-_Earth-64.png"))); // NOI18N
         jButton3.setText("     Arbol de Redes   ");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 390, 320, 80));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 400, 320, 80));
 
         jButton7.setBackground(new java.awt.Color(51, 0, 51));
         jButton7.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11_-_Distance-64.png"))); // NOI18N
         jButton7.setText("    Distancia mas Corta");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 190, 320, 80));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 200, 320, 80));
 
         jButton9.setBackground(new java.awt.Color(51, 0, 51));
         jButton9.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/01_-_Globe-64.png"))); // NOI18N
         jButton9.setText(" Mayor Ancho de Banda");
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 290, 320, 80));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 300, 320, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/texture-blue-color-tint-background-wallpaper.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1550, 820));
@@ -325,12 +328,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        
-        this.jd_Conexion.setModal(true);
-        this.jd_Conexion.pack();
-        this.jd_Conexion.setVisible(true);
-
-
+        if (jButton8.isEnabled()) {
+            this.jd_Conexion.setModal(true);
+            this.jd_Conexion.pack();
+            this.jd_Conexion.setVisible(true);
+        }
     }//GEN-LAST:event_jButton8MouseClicked
 
     private void jd_ConexionWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jd_ConexionWindowActivated
@@ -344,7 +346,7 @@ public class Main extends javax.swing.JFrame {
         }
         this.cbx_nodo1.setModel(modelo1);
         this.cbx_nodo2.setModel(modelo);
-        
+
         String nombre1 = ((nodo_g) modelo.getSelectedItem()).value;
         jl_red1.setText(nombre1);
         jl_red11.setText(nombre1);
@@ -374,10 +376,10 @@ public class Main extends javax.swing.JFrame {
         SpinnerModel sm2 = new SpinnerNumberModel(0, 0, 20, 1); //default value,lower bound,upper bound,increment by
         DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_material.getModel();
         String nombre2 = modelo2.getSelectedItem().toString();
-        if(nombre2.equals("Cobre")){
+        if (nombre2.equals("Cobre")) {
             js_ancho1.setModel(sm);
             js_ancho2.setModel(sm);
-        }else{
+        } else {
             js_ancho1.setModel(sm2);
             js_ancho2.setModel(sm2);
         }
@@ -390,20 +392,28 @@ public class Main extends javax.swing.JFrame {
         nodo_g Nodo2 = ((nodo_g) modelo2.getSelectedItem());
         DefaultComboBoxModel modelo3 = (DefaultComboBoxModel) cbx_material.getModel();
         String material = modelo3.getSelectedItem().toString();
-        arista arista1 = new arista((int)js_longitud.getValue(), (int)js_ancho1.getValue(), (int)js_ancho2.getValue(), material);
+        arista arista1 = new arista((int) js_longitud.getValue(), (int) js_ancho1.getValue(), (int) js_ancho2.getValue(), material);
         arista1.setInicio(Nodo1);
         arista1.setFin(Nodo2);
-        int pos1  = grafo.getNodos().find(Nodo1);
-        int pos2  = grafo.getNodos().find(Nodo2);
-        ((nodo_g)grafo.getNodos().at(pos1)).getAristas().push_back(arista1);
-        ((nodo_g)grafo.getNodos().at(pos2)).getAristas().push_back(arista1);
-        
+        int pos1 = grafo.getNodos().find(Nodo1);
+        int pos2 = grafo.getNodos().find(Nodo2);
+        ((nodo_g) grafo.getNodos().at(pos1)).getAristas().push_back(arista1);
+        ((nodo_g) grafo.getNodos().at(pos2)).getAristas().push_back(arista1);
+
         try {
             grafico();
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jb_NuevaConexionMouseClicked
+
+    private void jButton8MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseMoved
+        if (grafo.nodos.size() < 2) {
+            jButton8.setEnabled(false);
+        } else {
+            jButton8.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton8MouseMoved
 
     public void grafico() throws IOException {
         Font font = new Font("Dialog", Font.BOLD, 14);
@@ -414,7 +424,7 @@ public class Main extends javax.swing.JFrame {
             String tipo = ((nodo_g) grafo.getNodos().at(i)).tipo;
             Image imagen = null;
             switch (tipo) {
-                case "Red Central":{
+                case "Red Central": {
                     font = new Font("Dialog", Font.BOLD, 16);
                     imagen = ImageIO.read(new File("C:\\Users\\Admin\\TOGO\\TOGO\\src\\Images\\Black_ball.png"));
                     break;
@@ -532,6 +542,7 @@ public class Main extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     grafo grafo = new grafo();
+    
     int numeroNodo = 1;
 
 }
