@@ -45,24 +45,26 @@ public class Main extends javax.swing.JFrame {
 
         jd_Conexion = new javax.swing.JDialog();
         jl_red2 = new javax.swing.JLabel();
-        cbx_nodo1 = new javax.swing.JComboBox();
-        cbx_nodo2 = new javax.swing.JComboBox();
         jLabel7 = new javax.swing.JLabel();
         jl_red1 = new javax.swing.JLabel();
-        jl_red11 = new javax.swing.JLabel();
-        jl_red22 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         js_longitud = new javax.swing.JSpinner();
         js_ancho1 = new javax.swing.JSpinner();
-        jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        js_ancho2 = new javax.swing.JSpinner();
         jb_NuevaConexion = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         cbx_material = new javax.swing.JComboBox();
         jLabel5 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jd_Conexion1 = new javax.swing.JDialog();
+        jLabel8 = new javax.swing.JLabel();
+        jb_NuevaConexion1 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        cbx_nodo1 = new javax.swing.JComboBox();
+        cbx_nodo2 = new javax.swing.JComboBox();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jp_Grafo = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -86,25 +88,7 @@ public class Main extends javax.swing.JFrame {
         jl_red2.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red2.setForeground(new java.awt.Color(255, 255, 255));
         jl_red2.setText("Red2");
-        jd_Conexion.getContentPane().add(jl_red2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, 260, 50));
-
-        cbx_nodo1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        cbx_nodo1.setForeground(new java.awt.Color(0, 51, 153));
-        cbx_nodo1.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cbx_nodo1ItemStateChanged(evt);
-            }
-        });
-        jd_Conexion.getContentPane().add(cbx_nodo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 260, 50));
-
-        cbx_nodo2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        cbx_nodo2.setForeground(new java.awt.Color(0, 51, 153));
-        cbx_nodo2.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cbx_nodo2ItemStateChanged(evt);
-            }
-        });
-        jd_Conexion.getContentPane().add(cbx_nodo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, 260, 50));
+        jd_Conexion.getContentPane().add(jl_red2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 260, 50));
 
         jLabel7.setFont(new java.awt.Font("Impact", 1, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 204, 0));
@@ -115,48 +99,25 @@ public class Main extends javax.swing.JFrame {
         jl_red1.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
         jl_red1.setForeground(new java.awt.Color(255, 255, 255));
         jl_red1.setText("Red1");
-        jd_Conexion.getContentPane().add(jl_red1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 270, 50));
+        jd_Conexion.getContentPane().add(jl_red1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 270, 50));
 
-        jl_red11.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
-        jl_red11.setForeground(new java.awt.Color(255, 255, 255));
-        jl_red11.setText("Red1");
-        jd_Conexion.getContentPane().add(jl_red11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 270, 50));
-
-        jl_red22.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
-        jl_red22.setForeground(new java.awt.Color(255, 255, 255));
-        jl_red22.setText("Red2");
-        jd_Conexion.getContentPane().add(jl_red22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 530, 260, 50));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/arrow-up-64 - Copy.png"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 70, 70));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/arrow-up-64 - Copy - Copy.png"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 70, 70));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/2283_-_Left-Right_II-64.png"))); // NOI18N
+        jd_Conexion.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 60, 70));
 
         js_longitud.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         js_longitud.setModel(new javax.swing.SpinnerNumberModel());
         js_longitud.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_longitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 630, 70, 50));
+        jd_Conexion.getContentPane().add(js_longitud, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 450, 70, 50));
 
         js_ancho1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         js_ancho1.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), null, Integer.valueOf(100), Integer.valueOf(1)));
         js_ancho1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_ancho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 420, 70, 50));
-
-        jLabel13.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Escoger las Redes:");
-        jd_Conexion.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 310, 80));
+        jd_Conexion.getContentPane().add(js_ancho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 70, 50));
 
         jLabel14.setFont(new java.awt.Font("Poor Richard", 0, 36)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Ingresar el Material:");
-        jd_Conexion.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
-
-        js_ancho2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        js_ancho2.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), null, Integer.valueOf(100), Integer.valueOf(1)));
-        js_ancho2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jd_Conexion.getContentPane().add(js_ancho2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 530, 70, 50));
+        jLabel14.setText("Ingresar el Ancho de Banda:");
+        jd_Conexion.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
 
         jb_NuevaConexion.setBackground(new java.awt.Color(255, 255, 255));
         jb_NuevaConexion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/011_yes-128.png"))); // NOI18N
@@ -165,12 +126,17 @@ public class Main extends javax.swing.JFrame {
                 jb_NuevaConexionMouseClicked(evt);
             }
         });
-        jd_Conexion.getContentPane().add(jb_NuevaConexion, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 610, 150, 90));
+        jd_Conexion.getContentPane().add(jb_NuevaConexion, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 550, 150, 90));
 
         jLabel17.setFont(new java.awt.Font("Poor Richard", 0, 36)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Ingresar la Longitud:");
-        jd_Conexion.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, -1, -1));
+        jd_Conexion.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 460, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("Poor Richard", 0, 36)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("Ingresar el Material:");
+        jd_Conexion.getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
 
         cbx_material.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         cbx_material.setForeground(new java.awt.Color(0, 51, 153));
@@ -180,13 +146,64 @@ public class Main extends javax.swing.JFrame {
                 cbx_materialItemStateChanged(evt);
             }
         });
-        jd_Conexion.getContentPane().add(cbx_material, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, 280, 50));
+        jd_Conexion.getContentPane().add(cbx_material, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, 280, 50));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background_spots_black_gray_65536_1920x1080.jpg"))); // NOI18N
-        jd_Conexion.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 600));
+        jd_Conexion.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 510));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/38.jpg"))); // NOI18N
         jd_Conexion.getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 170));
+
+        jd_Conexion1.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                jd_Conexion1WindowActivated(evt);
+            }
+        });
+        jd_Conexion1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setFont(new java.awt.Font("Impact", 1, 48)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(204, 204, 0));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/usb-cable_2-128.png"))); // NOI18N
+        jLabel8.setText("  N U E V A  C O N E X I O N");
+        jd_Conexion1.getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 650, 130));
+
+        jb_NuevaConexion1.setBackground(new java.awt.Color(255, 255, 255));
+        jb_NuevaConexion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/011_yes-128.png"))); // NOI18N
+        jb_NuevaConexion1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jb_NuevaConexion1MouseClicked(evt);
+            }
+        });
+        jd_Conexion1.getContentPane().add(jb_NuevaConexion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 320, 150, 90));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/38.jpg"))); // NOI18N
+        jd_Conexion1.getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 170));
+
+        jLabel13.setFont(new java.awt.Font("Poor Richard", 1, 36)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setText("Escoger las Redes:");
+        jd_Conexion1.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 310, 80));
+
+        cbx_nodo1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        cbx_nodo1.setForeground(new java.awt.Color(0, 51, 153));
+        cbx_nodo1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cbx_nodo1ItemStateChanged(evt);
+            }
+        });
+        jd_Conexion1.getContentPane().add(cbx_nodo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 260, 50));
+
+        cbx_nodo2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        cbx_nodo2.setForeground(new java.awt.Color(0, 51, 153));
+        cbx_nodo2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cbx_nodo2ItemStateChanged(evt);
+            }
+        });
+        jd_Conexion1.getContentPane().add(cbx_nodo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, 260, 50));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background_spots_black_gray_65536_1920x1080.jpg"))); // NOI18N
+        jd_Conexion1.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 290));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -255,29 +272,39 @@ public class Main extends javax.swing.JFrame {
         });
         getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 600, 190, 60));
 
-        jButton3.setBackground(new java.awt.Color(51, 0, 51));
-        jButton3.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBackground(new java.awt.Color(0, 153, 153));
+        jButton3.setFont(new java.awt.Font("Rockwell Condensed", 0, 26)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 51));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/08_-_Earth-64.png"))); // NOI18N
         jButton3.setText("     Arbol de Redes   ");
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 400, 320, 80));
 
-        jButton7.setBackground(new java.awt.Color(51, 0, 51));
-        jButton7.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setBackground(new java.awt.Color(0, 153, 153));
+        jButton7.setFont(new java.awt.Font("Rockwell Condensed", 0, 26)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(0, 0, 51));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11_-_Distance-64.png"))); // NOI18N
         jButton7.setText("    Distancia mas Corta");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 200, 320, 80));
 
-        jButton9.setBackground(new java.awt.Color(51, 0, 51));
-        jButton9.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setBackground(new java.awt.Color(0, 153, 153));
+        jButton9.setFont(new java.awt.Font("Rockwell Condensed", 0, 26)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(0, 0, 51));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/01_-_Globe-64.png"))); // NOI18N
         jButton9.setText(" Mayor Ancho de Banda");
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 300, 320, 80));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/texture-blue-color-tint-background-wallpaper.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1550, 820));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -308,7 +335,17 @@ public class Main extends javax.swing.JFrame {
                 JOptionPane.PLAIN_MESSAGE);
 
         grafo.addVertex(new nodo_g(nombre, tipo, numeroNodo, x - 10, y - 10));
+        if (numeroNodo != 1) {
+            String nombre1 = ((nodo_g) grafo.getNodos().at(0)).value;
+            String nombre2 = ((nodo_g) grafo.getNodos().at(grafo.getNodos().size() - 1)).value;
+            jl_red1.setText(nombre1);
+            jl_red2.setText(nombre2);
+            bool = true;
+            this.jd_Conexion.setModal(true);
+            this.jd_Conexion.pack();
+            this.jd_Conexion.setVisible(true);
 
+        }
         numeroNodo++;
 
         try {
@@ -328,14 +365,56 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        bool = false;
         if (jButton8.isEnabled()) {
-            this.jd_Conexion.setModal(true);
-            this.jd_Conexion.pack();
-            this.jd_Conexion.setVisible(true);
+            this.jd_Conexion1.setModal(true);
+            this.jd_Conexion1.pack();
+            this.jd_Conexion1.setVisible(true);
         }
     }//GEN-LAST:event_jButton8MouseClicked
 
     private void jd_ConexionWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jd_ConexionWindowActivated
+
+    }//GEN-LAST:event_jd_ConexionWindowActivated
+
+    private void cbx_nodo1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_nodo1ItemStateChanged
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cbx_nodo1.getModel();
+        String nombre1 = ((nodo_g) modelo.getSelectedItem()).value;
+        jl_red1.setText(nombre1);
+
+    }//GEN-LAST:event_cbx_nodo1ItemStateChanged
+
+    private void cbx_nodo2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_nodo2ItemStateChanged
+        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_nodo2.getModel();
+        String nombre2 = ((nodo_g) modelo2.getSelectedItem()).value;
+        jl_red2.setText(nombre2);
+    }//GEN-LAST:event_cbx_nodo2ItemStateChanged
+
+    private void cbx_materialItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_materialItemStateChanged
+        SpinnerModel sm = new SpinnerNumberModel(0, 0, 100, 1); //default value,lower bound,upper bound,increment by
+        SpinnerModel sm2 = new SpinnerNumberModel(0, 0, 10, 1); //default value,lower bound,upper bound,increment by
+        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_material.getModel();
+        String nombre2 = modelo2.getSelectedItem().toString();
+        if (nombre2.equals("Cobre")) {
+            js_ancho1.setModel(sm);
+        } else {
+            js_ancho1.setModel(sm2);
+        }
+    }//GEN-LAST:event_cbx_materialItemStateChanged
+
+    private void jb_NuevaConexionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_NuevaConexionMouseClicked
+        crearArista();
+    }//GEN-LAST:event_jb_NuevaConexionMouseClicked
+
+    private void jButton8MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseMoved
+        if (grafo.nodos.size() < 2) {
+            jButton8.setEnabled(false);
+        } else {
+            jButton8.setEnabled(true);
+        }
+    }//GEN-LAST:event_jButton8MouseMoved
+
+    private void jd_Conexion1WindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jd_Conexion1WindowActivated
         DefaultComboBoxModel modelo = new DefaultComboBoxModel();
         for (int i = 1; i < grafo.getNodos().size(); i++) {
             modelo.addElement((nodo_g) grafo.getNodos().at(i));
@@ -349,54 +428,62 @@ public class Main extends javax.swing.JFrame {
 
         String nombre1 = ((nodo_g) modelo.getSelectedItem()).value;
         jl_red1.setText(nombre1);
-        jl_red11.setText(nombre1);
         String nombre2 = ((nodo_g) modelo1.getSelectedItem()).value;
         jl_red2.setText(nombre2);
-        jl_red22.setText(nombre2);
 
-    }//GEN-LAST:event_jd_ConexionWindowActivated
+    }//GEN-LAST:event_jd_Conexion1WindowActivated
 
-    private void cbx_nodo1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_nodo1ItemStateChanged
-        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cbx_nodo1.getModel();
-        String nombre1 = ((nodo_g) modelo.getSelectedItem()).value;
-        jl_red1.setText(nombre1);
-        jl_red11.setText(nombre1);
-
-    }//GEN-LAST:event_cbx_nodo1ItemStateChanged
-
-    private void cbx_nodo2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_nodo2ItemStateChanged
-        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_nodo2.getModel();
-        String nombre2 = ((nodo_g) modelo2.getSelectedItem()).value;
-        jl_red2.setText(nombre2);
-        jl_red22.setText(nombre2);
-    }//GEN-LAST:event_cbx_nodo2ItemStateChanged
-
-    private void cbx_materialItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbx_materialItemStateChanged
-        SpinnerModel sm = new SpinnerNumberModel(0, 0, 100, 1); //default value,lower bound,upper bound,increment by
-        SpinnerModel sm2 = new SpinnerNumberModel(0, 0, 20, 1); //default value,lower bound,upper bound,increment by
-        DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_material.getModel();
-        String nombre2 = modelo2.getSelectedItem().toString();
-        if (nombre2.equals("Cobre")) {
-            js_ancho1.setModel(sm);
-            js_ancho2.setModel(sm);
-        } else {
-            js_ancho1.setModel(sm2);
-            js_ancho2.setModel(sm2);
-        }
-    }//GEN-LAST:event_cbx_materialItemStateChanged
-
-    private void jb_NuevaConexionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_NuevaConexionMouseClicked
+    private void jb_NuevaConexion1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jb_NuevaConexion1MouseClicked
         DefaultComboBoxModel modelo = (DefaultComboBoxModel) cbx_nodo1.getModel();
         nodo_g Nodo1 = ((nodo_g) modelo.getSelectedItem());
         DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_nodo2.getModel();
         nodo_g Nodo2 = ((nodo_g) modelo2.getSelectedItem());
+        if (Nodo1 != Nodo2) {
+            this.jd_Conexion1.setVisible(false);
+            this.jd_Conexion1.setModal(false);
+            this.jd_Conexion.setModal(true);
+            this.jd_Conexion.pack();
+            this.jd_Conexion.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(this, "No se puede seleccionar el mismo nodo");
+        }
+
+    }//GEN-LAST:event_jb_NuevaConexion1MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        Floyd(true);
+    }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        Floyd(false);
+    }//GEN-LAST:event_jButton9MouseClicked
+
+    public void crearArista() {
+        nodo_g Nodo1;
+        nodo_g Nodo2;
+        int pos1;
+        int pos2;
+
+        if (bool) {
+            Nodo1 = (nodo_g) grafo.getNodos().at(0);
+            Nodo2 = (nodo_g) grafo.getNodos().at(grafo.getNodos().size() - 1);
+            pos1 = 0;
+            pos2 = grafo.getNodos().size() - 1;
+        } else {
+            DefaultComboBoxModel modelo = (DefaultComboBoxModel) cbx_nodo1.getModel();
+            Nodo1 = ((nodo_g) modelo.getSelectedItem());
+            DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_nodo2.getModel();
+            Nodo2 = ((nodo_g) modelo2.getSelectedItem());
+            pos1 = grafo.getNodos().find(Nodo1);
+            pos2 = grafo.getNodos().find(Nodo2);
+        }
+
         DefaultComboBoxModel modelo3 = (DefaultComboBoxModel) cbx_material.getModel();
         String material = modelo3.getSelectedItem().toString();
-        arista arista1 = new arista((int) js_longitud.getValue(), (int) js_ancho1.getValue(), (int) js_ancho2.getValue(), material);
+        arista arista1 = new arista((int) js_longitud.getValue(), (int) js_ancho1.getValue(), material);
         arista1.setInicio(Nodo1);
         arista1.setFin(Nodo2);
-        int pos1 = grafo.getNodos().find(Nodo1);
-        int pos2 = grafo.getNodos().find(Nodo2);
+
         ((nodo_g) grafo.getNodos().at(pos1)).getAristas().push_back(arista1);
         ((nodo_g) grafo.getNodos().at(pos2)).getAristas().push_back(arista1);
 
@@ -405,21 +492,35 @@ public class Main extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jb_NuevaConexionMouseClicked
-
-    private void jButton8MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseMoved
-        if (grafo.nodos.size() < 2) {
-            jButton8.setEnabled(false);
-        } else {
-            jButton8.setEnabled(true);
-        }
-    }//GEN-LAST:event_jButton8MouseMoved
+        this.jd_Conexion.setModal(false);
+        this.jd_Conexion.setVisible(false);
+    }
 
     public void grafico() throws IOException {
         Font font = new Font("Dialog", Font.BOLD, 14);
         Graphics g = this.jp_Grafo.getGraphics();
         g.setFont(font);
+        int nodo1, nodo2;
+        for (int i = 0; i < grafo.getNodos().size(); i++) {
+            for (int j = 0; j < ((nodo_g) grafo.getNodos().at(i)).getAristas().size(); j++) {
+                try {
+                    nodo1 = (((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getInicio().numero) - 1;
+                    nodo2 = (((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getFin().numero) - 1;
+                    g.setColor(Color.GRAY);
+                    g.drawLine(((nodo_g) grafo.getNodos().at(nodo1)).getX() + 15,
+                            ((nodo_g) grafo.getNodos().at(nodo1)).getY() + 15,
+                            ((nodo_g) grafo.getNodos().at(nodo2)).getX() + 15,
+                            ((nodo_g) grafo.getNodos().at(nodo2)).getY() + 15);
+                    g.setColor(Color.BLUE);
 
+                    g.drawString(Long.toString(((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getLongitud()),
+                            ((((nodo_g) grafo.getNodos().at(nodo1)).getX() + 15) + (((nodo_g) grafo.getNodos().at(nodo2)).getX() + 15)) / 2, ((((nodo_g) grafo.getNodos().at(nodo1)).getY() + 15) + (((nodo_g) grafo.getNodos().at(nodo2)).getY() + 15)) / 2);
+                    g.setColor(Color.BLUE);
+
+                } catch (Exception e) {
+                }
+            }
+        }
         for (int i = 0; i < grafo.getNodos().size(); i++) {
             String tipo = ((nodo_g) grafo.getNodos().at(i)).tipo;
             Image imagen = null;
@@ -445,32 +546,80 @@ public class Main extends javax.swing.JFrame {
             g.drawImage(imagen, ((nodo_g) grafo.getNodos().at(i)).getX(), ((nodo_g) grafo.getNodos().at(i)).getY(), this);
 
         }
-
-        int nodo1, nodo2;
-        for (int i = 0; i < grafo.getNodos().size(); i++) {
-            for (int j = 0; j < ((nodo_g) grafo.getNodos().at(i)).getAristas().size(); j++) {
-                try {
-                    nodo1 = (((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getInicio().numero) - 1;
-                    nodo2 = (((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getFin().numero) - 1;
-                    g.setColor(Color.GRAY);
-                    g.drawLine(((nodo_g) grafo.getNodos().at(nodo1)).getX() + 15,
-                            ((nodo_g) grafo.getNodos().at(nodo1)).getY() + 15,
-                            ((nodo_g) grafo.getNodos().at(nodo2)).getX() + 15,
-                            ((nodo_g) grafo.getNodos().at(nodo2)).getY() + 15);
-                    g.setColor(Color.BLUE);
-
-                    g.drawString(Long.toString(((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(j)).getLongitud()),
-                            ((((nodo_g) grafo.getNodos().at(nodo1)).getX() + 15) + (((nodo_g) grafo.getNodos().at(nodo2)).getX() + 15)) / 2, ((((nodo_g) grafo.getNodos().at(nodo1)).getY() + 15) + (((nodo_g) grafo.getNodos().at(nodo2)).getY() + 15)) / 2);
-                    g.setColor(Color.BLUE);
-
-                } catch (Exception e) {
-                }
-            }
-        }
         for (int i = 0; i < grafo.getNodos().size(); i++) {
             g.setColor(Color.BLACK);
             g.drawString(((nodo_g) grafo.getNodos().at(i)).getValue(), ((nodo_g) grafo.getNodos().at(i)).getX() + 10, ((nodo_g) grafo.getNodos().at(i)).getY() + 18);
 
+        }
+    }
+
+    public void Floyd(boolean distancia) {
+        double[][] matriz = llenarMatriz(distancia);
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                for (int k = 0; k < matriz.length; k++) {
+                    double dt = matriz[i][k] + matriz[k][j];
+                    if (i != j) {
+                        if (matriz[i][j] > dt || matriz[i][j] == 0) {
+                            matriz[i][j] = dt;
+                        }
+                    }
+                }
+            }
+        }
+        imprimirMatriz(matriz);
+    }
+
+    public double[][] llenarMatriz(boolean distancia) {
+        int size = grafo.nodos.size();
+        double[][] matriz = new double[size + 1][size + 1];
+        for (int i = 0; i < size + 1; i++) {
+            for (int j = 0; j < size + 1; j++) {
+                if (i == 0) {
+                    matriz[i][j] = j;
+                } else if (j == 0) {
+                    matriz[i][j] = i;
+                } else {
+                    double inf = pesoArista(Double.POSITIVE_INFINITY, distancia, i, j);
+                    matriz[i][j] = inf;
+                }
+            }
+        }
+        return matriz;
+    }
+
+    public double pesoArista(double inf, boolean distancia, int i, int j) {
+        for (int k = 0; k < ((nodo_g) grafo.getNodos().at(i)).getAristas().size(); k++) {
+            for (int l = 0; l < ((nodo_g) grafo.getNodos().at(j)).getAristas().size(); l++) {
+                if (((nodo_g) grafo.getNodos().at(i)).getAristas().at(k) == ((nodo_g) grafo.getNodos().at(j)).getAristas().at(l)) {
+                    if (distancia) {
+                        inf = ((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(k)).longitud;
+                    } else {
+                        inf = ((arista) ((nodo_g) grafo.getNodos().at(i)).getAristas().at(k)).ancho_banda1;
+                    }
+                }
+            }
+        }
+        if(i==j)
+            inf=0;
+        return inf;
+    }
+
+    public void imprimirMatriz(double[][] matriz) {
+        for (int i = 0; i <grafo.nodos.size(); i++) {
+            if(i==0){
+                System.out.print("\t\t\t"+grafo.nodos.at(i));
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                if(j==0){
+                    System.out.print("\t\t\t"+grafo.nodos.at(i));
+                }
+                System.out.print("\t\t\t"+matriz[i][j]);
+            }
+            System.out.println();
         }
     }
 
@@ -518,31 +667,33 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JButton jb_NuevaConexion;
+    private javax.swing.JButton jb_NuevaConexion1;
     private javax.swing.JDialog jd_Conexion;
+    private javax.swing.JDialog jd_Conexion1;
     private javax.swing.JLabel jl_red1;
-    private javax.swing.JLabel jl_red11;
     private javax.swing.JLabel jl_red2;
-    private javax.swing.JLabel jl_red22;
     private javax.swing.JPanel jp_Grafo;
     private javax.swing.JSpinner js_ancho1;
-    private javax.swing.JSpinner js_ancho2;
     private javax.swing.JSpinner js_longitud;
     // End of variables declaration//GEN-END:variables
 
     grafo grafo = new grafo();
-    
+    boolean bool;
     int numeroNodo = 1;
 
 }

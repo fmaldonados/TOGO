@@ -74,25 +74,15 @@ public class Lista {
     }
 
     public int find(Object value) {
-        node temp = head;
-        int cont = 0;
-        boolean esta = false;
-        boolean salir = false;
-        while (!salir) {
-            if ((temp.getValue()) == value) {
-                salir = true;
-                esta = true;
-            } else {
-                temp = temp.getNext();
-                cont++;
-            }
-        }
+        node current = head;
 
-        if (esta) {
-            return cont - 1;
-        } else {
-            return -1;
+        for (int i = 0; i < size(); i++) {
+            if (current.getValue() == value) {
+                return i;
+            }
+            current = current.getNext();
         }
+        return -1;
     }
 
     public int size() {

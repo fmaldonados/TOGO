@@ -4,7 +4,6 @@ package TOG;
 public class arista {
     int longitud;
     int ancho_banda1;
-    int ancho_banda2;
     String material;
     nodo_g inicio= new nodo_g();
     nodo_g fin = new nodo_g();
@@ -12,10 +11,9 @@ public class arista {
     public arista() {
     }
 
-    public arista(int longitud, int ancho_banda1, int ancho_banda2, String material) {
+    public arista(int longitud, int ancho_banda1, String material) {
         this.longitud = longitud;
         this.ancho_banda1 = ancho_banda1;
-        this.ancho_banda2 = ancho_banda2;
         this.material = material;
     }
 
@@ -27,14 +25,7 @@ public class arista {
         this.ancho_banda1 = ancho_banda1;
     }
 
-    public int getAncho_banda2() {
-        return ancho_banda2;
-    }
-
-    public void setAncho_banda2(int ancho_banda2) {
-        this.ancho_banda2 = ancho_banda2;
-    }
-
+  
     public String getMaterial() {
         return material;
     }
