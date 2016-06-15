@@ -16,6 +16,14 @@ public class arista {
         this.ancho_banda1 = ancho_banda1;
         this.material = material;
     }
+    
+    public arista(int longitud, int ancho_banda1, String material, nodo_g inicio, nodo_g fin) {
+        this.longitud = longitud;
+        this.ancho_banda1 = ancho_banda1;
+        this.material = material;
+        this.inicio = inicio;
+        this.fin = fin;
+    }
 
     public int getAncho_banda1() {
         return ancho_banda1;

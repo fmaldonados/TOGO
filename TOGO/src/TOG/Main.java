@@ -32,6 +32,18 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
+
+        grafo.addVertex(new nodo_g("Red C", "Red Central", 1, 20, 10));
+        grafo.addVertex(new nodo_g("Red Ca", "Repetidor de Red Doméstica", 2, 20, 10));
+        grafo.addVertex(new nodo_g("Red fa", "Antena Celular", 3, 20, 10));
+        grafo.addVertex(new nodo_g("Red ds", "Antena Celular", 4, 20, 10));
+        //grafo.getNodos().at(0)
+        ((nodo_g) grafo.getNodos().at(0)).agregar_a(new arista(30, 20, "c", (nodo_g) grafo.getNodos().at(0), (nodo_g) grafo.getNodos().at(1)));
+        ((nodo_g) grafo.getNodos().at(1)).agregar_a(new arista(10, 25, "c", (nodo_g) grafo.getNodos().at(1), (nodo_g) grafo.getNodos().at(2)));
+        ((nodo_g) grafo.getNodos().at(2)).agregar_a(new arista(10, 25, "c", (nodo_g) grafo.getNodos().at(2), (nodo_g) grafo.getNodos().at(0)));
+        ((nodo_g) grafo.getNodos().at(3)).agregar_a(new arista(10, 25, "c", (nodo_g) grafo.getNodos().at(3), (nodo_g) grafo.getNodos().at(1)));
+        ((nodo_g) grafo.getNodos().at(3)).agregar_a(new arista(10, 25, "c", (nodo_g) grafo.getNodos().at(3), (nodo_g) grafo.getNodos().at(2)));
+        
     }
 
     /**
@@ -366,6 +378,7 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
         bool = false;
+        opcion = 1;
         if (jButton8.isEnabled()) {
             this.jd_Conexion1.setModal(true);
             this.jd_Conexion1.pack();
@@ -439,11 +452,21 @@ public class Main extends javax.swing.JFrame {
         DefaultComboBoxModel modelo2 = (DefaultComboBoxModel) cbx_nodo2.getModel();
         nodo_g Nodo2 = ((nodo_g) modelo2.getSelectedItem());
         if (Nodo1 != Nodo2) {
-            this.jd_Conexion1.setVisible(false);
-            this.jd_Conexion1.setModal(false);
-            this.jd_Conexion.setModal(true);
-            this.jd_Conexion.pack();
-            this.jd_Conexion.setVisible(true);
+            if (opcion == 1) {
+                this.jd_Conexion1.setVisible(false);
+                this.jd_Conexion1.setModal(false);
+                this.jd_Conexion.setModal(true);
+                this.jd_Conexion.pack();
+                this.jd_Conexion.setVisible(true);
+            } else if (opcion == 2) {
+                //distancia = true
+                dijkstra(true,Nodo1,Nodo2);
+                Floyd(true);
+            } else if (opcion == 3) {
+                //distancia = false
+                dijkstra(false,Nodo1,Nodo2);
+                Floyd(false);
+            }
         } else {
             JOptionPane.showMessageDialog(this, "No se puede seleccionar el mismo nodo");
         }
@@ -451,12 +474,243 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jb_NuevaConexion1MouseClicked
 
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
-        Floyd(true);
+        opcion = 2;
+        this.jd_Conexion1.setModal(true);
+        this.jd_Conexion1.pack();
+        this.jd_Conexion1.setVisible(true);
     }//GEN-LAST:event_jButton7MouseClicked
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
-        Floyd(false);
+        opcion = 3;
+        this.jd_Conexion1.setModal(true);
+        this.jd_Conexion1.pack();
+        this.jd_Conexion1.setVisible(true);
     }//GEN-LAST:event_jButton9MouseClicked
+
+    public void dijkstra(boolean distancia, nodo_g Nodo1, nodo_g Nodo2) {
+        Lista pesos = new Lista();//
+        Lista camino = new Lista();//posiciones
+        Lista bool = new Lista();
+        double inf = Double.POSITIVE_INFINITY;
+        for (int i = 0; i < grafo.nodos.size(); i++) {
+            camino.push_back(-1);
+            pesos.push_back(inf);
+            bool.push_back(false);
+        }
+        int posicion;
+        for (int i = 0; i < grafo.nodos.size(); i++) {
+            
+            posicion = minVertex(pesos, bool);
+            System.out.println(grafo.nodos.at(posicion));
+            bool.insert(posicion, true);
+            Lista n = copiaLista(((nodo_g) grafo.nodos.at(posicion)).aristas);
+            for (int j = 0; j < n.size(); j++) {
+                int v = ((arista)n.at(j)).fin.numero-1;
+                double peso;
+                if(distancia){
+                    peso = ((arista)n.at(j)).longitud;
+                }else{
+                    peso = ((arista)n.at(j)).ancho_banda1;
+                }
+                int d = (int) ((double)pesos.at(posicion) + peso);
+                if ((double)pesos.at(v) > d) {
+                    pesos.insert(v, d);
+                    camino.insert(v, posicion);
+                }
+            }
+        }
+        for (int i = 0; i < pesos.size(); i++) {
+            System.out.println("\t\t\t\t"+pesos.at(i));
+        }
+        for (int i = 0; i < camino.size(); i++) {
+            System.out.println("\t\t\t\t"+camino.at(i));
+        }
+    }
+    
+    private int minVertex(Lista dist, Lista v) {
+        double x = Double.POSITIVE_INFINITY;
+        int y = -1;   // graph not connected, or no unvisited vertices
+        for (int i = 0; i < dist.size(); i++) {
+            if (!(boolean)v.at(i) && (double)dist.at(i) < x) {
+                y = i;
+                x = (double)dist.at(i);
+            }
+        }
+        return y;
+    }
+    
+
+    public int sumaPesos(int num, boolean distancia) {
+        /*
+         encontrar el peso que se le sumaria a la arista presente
+         */
+        nodo_g Nodo = (nodo_g) grafo.nodos.at(num - 1);
+        Lista lista = copiaLista(Nodo.getAristas());
+        int peso = 0;
+        double menor = Double.POSITIVE_INFINITY;
+        for (int i = 0; i < lista.size(); i++) {
+            if (distancia) {
+                if (menor > ((arista) lista.at(i)).longitud) {
+                    menor = ((arista) lista.at(i)).longitud;
+                    peso = ((arista) lista.at(i)).fin.numero - 1;
+                }
+            } else {
+                if (menor > ((arista) lista.at(i)).ancho_banda1) {
+                    menor = ((arista) lista.at(i)).ancho_banda1;
+                    peso = ((arista) lista.at(i)).fin.numero - 1;
+                }
+            }
+        }
+        return peso;
+    }
+
+    public int menorArista(nodo_g Nodo, boolean distancia) {
+        Lista lista = copiaLista(Nodo.getAristas());
+        int num = 0;
+        double menor = Double.POSITIVE_INFINITY;
+        for (int i = 0; i < lista.size(); i++) {
+            if (distancia) {
+                if (menor > ((arista) lista.at(i)).longitud) {
+                    menor = ((arista) lista.at(i)).longitud;
+                    num = ((arista) lista.at(i)).fin.numero - 1;
+                }
+            } else {
+                if (menor > ((arista) lista.at(i)).ancho_banda1) {
+                    menor = ((arista) lista.at(i)).ancho_banda1;
+                    num = ((arista) lista.at(i)).fin.numero - 1;
+                }
+            }
+        }
+        return num;
+    }
+
+    /*
+    // A utility function to find the vertex with minimum distance value,
+    // from the set of vertices not yet included in shortest path tree
+    static final int V=9;
+    int minDistance(int dist[], Boolean sptSet[])
+    {
+        // Initialize min value
+        int min = Integer.MAX_VALUE, min_index=-1;
+ 
+        for (int v = 0; v < V; v++)
+            if (sptSet[v] == false && dist[v] <= min)
+            {
+                min = dist[v];
+                min_index = v;
+            }
+ 
+        return min_index;
+    }
+ 
+    // A utility function to print the constructed distance array
+    void printSolution(int dist[], int n)
+    {
+        System.out.println("Vertex   Distance from Source");
+        for (int i = 0; i < V; i++)
+            System.out.println(i+" \t\t "+dist[i]);
+    }
+ 
+    // Funtion that implements Dijkstra's single source shortest path
+    // algorithm for a graph represented using adjacency matrix
+    // representation
+    void dijkstra(int graph[][], int src)
+    {
+        int dist[] = new int[V]; // The output array. dist[i] will hold
+                                 // the shortest distance from src to i
+ 
+        // sptSet[i] will true if vertex i is included in shortest
+        // path tree or shortest distance from src to i is finalized
+        Boolean sptSet[] = new Boolean[V];
+ 
+        // Initialize all distances as INFINITE and stpSet[] as false
+        for (int i = 0; i < V; i++)
+        {
+            dist[i] = Integer.MAX_VALUE;
+            sptSet[i] = false;
+        }
+ 
+        // Distance of source vertex from itself is always 0
+        dist[src] = 0;
+ 
+        // Find shortest path for all vertices
+        for (int count = 0; count < V-1; count++)
+        {
+            // Pick the minimum distance vertex from the set of vertices
+            // not yet processed. u is always equal to src in first
+            // iteration.
+            int u = minDistance(dist, sptSet);
+ 
+            // Mark the picked vertex as processed
+            sptSet[u] = true;
+ 
+            // Update dist value of the adjacent vertices of the
+            // picked vertex.
+            for (int v = 0; v < V; v++)
+ 
+                // Update dist[v] only if is not in sptSet, there is an
+                // edge from u to v, and total weight of path from src to
+                // v through u is smaller than current value of dist[v]
+                if (!sptSet[v] && graph[u][v]!=0 &&
+                        dist[u] != Integer.MAX_VALUE &&
+                        dist[u]+graph[u][v] < dist[v])
+                    dist[v] = dist[u] + graph[u][v];
+        }
+ 
+        // print the constructed distance array
+        printSolution(dist, V);
+    }
+    */
+    
+    
+    /*
+    source.minDistance = 0.;
+        PriorityQueue<Vertex> vertexQueue = new PriorityQueue<Vertex>();
+    vertexQueue.add(source);
+
+    while (!vertexQueue.isEmpty()) {
+        Vertex u = vertexQueue.poll();
+
+            // Visit each edge exiting u
+            for (Edge e : u.adjacencies)
+            {
+                Vertex v = e.target;
+                double weight = e.weight;
+                double distanceThroughU = u.minDistance + weight;
+        if (distanceThroughU < v.minDistance) {
+            vertexQueue.remove(v);
+
+            v.minDistance = distanceThroughU ;
+            v.previous = u;
+            vertexQueue.add(v);
+        }
+            }
+        }
+    }
+
+    public static List<Vertex> getShortestPathTo(Vertex target)
+    {
+        List<Vertex> path = new ArrayList<Vertex>();
+        for (Vertex vertex = target; vertex != null; vertex = vertex.previous)
+            path.add(vertex);
+
+        Collections.reverse(path);
+        return path;
+    }
+    */
+
+   
+
+    
+
+    public Lista copiaLista(Lista copia) {
+        Lista copia2 = new Lista();
+        for (int i = 0; i < copia.size(); i++) {
+            copia2.push_back(copia.at(i));
+        }
+        return copia2;
+
+    }
 
     public void crearArista() {
         nodo_g Nodo1;
@@ -555,12 +809,12 @@ public class Main extends javax.swing.JFrame {
 
     public void Floyd(boolean distancia) {
         double[][] matriz = llenarMatriz(distancia);
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
-                for (int k = 0; k < matriz.length; k++) {
+        for (int i = 1; i < matriz.length; i++) {
+            for (int j = 1; j < matriz.length; j++) {
+                for (int k = 1; k < matriz.length; k++) {
                     double dt = matriz[i][k] + matriz[k][j];
                     if (i != j) {
-                        if (matriz[i][j] > dt || matriz[i][j] == 0) {
+                        if (matriz[i][j] > dt) {
                             matriz[i][j] = dt;
                         }
                     }
@@ -600,24 +854,22 @@ public class Main extends javax.swing.JFrame {
                 }
             }
         }
-        if(i==j)
-            inf=0;
+        if (i == j) {
+            inf = 0;
+        }
         return inf;
     }
 
     public void imprimirMatriz(double[][] matriz) {
-        for (int i = 0; i <grafo.nodos.size(); i++) {
-            if(i==0){
-                System.out.print("\t\t\t"+grafo.nodos.at(i));
+        for (int i = 0; i < grafo.nodos.size(); i++) {
+            if (i == 0) {
+                System.out.print("\t\t\t" + grafo.nodos.at(i));
             }
         }
         System.out.println();
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
-                if(j==0){
-                    System.out.print("\t\t\t"+grafo.nodos.at(i));
-                }
-                System.out.print("\t\t\t"+matriz[i][j]);
+                System.out.print("\t\t\t" + matriz[i][j]);
             }
             System.out.println();
         }
@@ -693,6 +945,7 @@ public class Main extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     grafo grafo = new grafo();
+    int opcion;
     boolean bool;
     int numeroNodo = 1;
 

@@ -26,6 +26,24 @@ public class nodo_g {
         this.y = y;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
+    
+
     public Lista getAristas() {
         return aristas;
     }
