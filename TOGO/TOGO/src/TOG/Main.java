@@ -65,6 +65,8 @@ public class Main extends javax.swing.JFrame {
         cbx_nodo1 = new javax.swing.JComboBox();
         cbx_nodo2 = new javax.swing.JComboBox();
         jLabel6 = new javax.swing.JLabel();
+        jd_arbol = new javax.swing.JDialog();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jp_Grafo = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -204,6 +206,16 @@ public class Main extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background_spots_black_gray_65536_1920x1080.jpg"))); // NOI18N
         jd_Conexion1.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 900, 290));
+
+        jd_arbol.addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                jd_arbolWindowActivated(evt);
+            }
+        });
+        jd_arbol.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/background_spots_black_gray_65536_1920x1080.jpg"))); // NOI18N
+        jd_arbol.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 670));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -464,8 +476,17 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        prim(grafo,(nodo_g)grafo.nodos.at(0));
+        Lista aristas = prim(grafo,(nodo_g)grafo.nodos.at(0)); // esta es la lista de aristas juany imprimilas en el dialog
+        
+        this.jd_arbol.setModal(true);
+        this.jd_arbol.pack();
+        this.jd_arbol.setVisible(true);
+        jd_arbol.setLocationRelativeTo(this);
     }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jd_arbolWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_jd_arbolWindowActivated
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jd_arbolWindowActivated
 
     public void crearArista() {
         nodo_g Nodo1;
@@ -737,6 +758,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -755,6 +777,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jb_NuevaConexion1;
     private javax.swing.JDialog jd_Conexion;
     private javax.swing.JDialog jd_Conexion1;
+    private javax.swing.JDialog jd_arbol;
     private javax.swing.JLabel jl_red1;
     private javax.swing.JLabel jl_red2;
     private javax.swing.JPanel jp_Grafo;
